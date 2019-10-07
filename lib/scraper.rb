@@ -35,10 +35,6 @@ class Scraper
     student[:profile_quote] = doc.css(".profile-quote").text if doc.css(".profile-quote").text
     student[:bio] = doc.css("p").text if doc.css("p").text
     student
-
     end
-    binding.pry
-
   end
-
 end
